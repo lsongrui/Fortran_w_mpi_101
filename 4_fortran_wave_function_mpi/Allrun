@@ -1,0 +1,8 @@
+# clear
+./Allclean
+mpif90  module_print_real_array.f90 utils.f90 4_fortran_wave_function_w_mpi.f90 -O3 -o 4_fortran_wave_function_w_mpi
+mpirun -np 4 ./4_fortran_wave_function_w_mpi     
+
+# vis
+gnuplot plot_script.gp
+echo check out ./results/animation.gif!

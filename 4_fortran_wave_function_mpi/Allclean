@@ -1,0 +1,2 @@
+rm -rf results *.mod 4_fortran_wave_function_w_mpi
+mkdir -p results

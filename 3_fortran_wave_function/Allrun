@@ -1,0 +1,7 @@
+mkdir -p results
+gfortran module_print_real_array.f90 utils.f90 3_fortran_wave_function.f90 -O3 -o 3_fortran_wave_function
+./3_fortran_wave_function
+
+# vis
+gnuplot plot_script.gp
+echo check out ./results/animation.gif!
